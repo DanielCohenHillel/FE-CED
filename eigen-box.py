@@ -63,7 +63,7 @@ def print_eigenvalues(mesh):
     print("Exact:    {}".format(true_eig))
 
 
-mesh = SphericalShellMesh(Point(0, 0), 1)
+mesh = RectangleMesh(Point(0, 0), Point(pi, pi), 40, 40)
 print("\ndiagonal mesh")
 print_eigenvalues(mesh)
 
